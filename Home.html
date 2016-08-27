@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'/>
+	<title>Quickart</title>
+	<meta name="viewport" content="width-divice-width,initial-scale-1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	
+
+	
+</head>
+<style>
+	body{
+
+		padding-top:40px ;
+			}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+#myCarousel{
+ padding-top: 0px;
+
+}
+
+#secondfooter{
+	margin-left:32%;
+}
+
+.full , {
+    width: 100%;	
+}
+.gap {
+	height: 30px;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+.footer {
+	background: #EDEFF1;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
+.footer p {
+	margin: 0;
+}
+.footer img {
+	max-width: 100%;
+}
+.footer h3 {
+	border-bottom: 1px solid #BAC1C8;
+	color: #54697E;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	padding: 40px 0 10px;
+	text-transform: uppercase;
+}
+.footer ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+.footer ul li a {
+	padding: 0 0 5px 0;
+	display: block;
+}
+.footer a {
+	color: #78828D
+}
+.supportLi h4 {
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: normal;
+	margin-bottom: 0 !important;
+	padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+	background: #FFFFFF;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	clear: both;
+	width: 100%;
+}
+.newsletter-box .btn {
+	border: medium none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	height: 40px;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+}
+.newsletter-box {
+	overflow: hidden;
+}
+.bg-gray {
+	background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+	box-shadow: 0 1px 0 #B4B3B3;
+}
+.social li {
+	background: none repeat scroll 0 0 #B5B5B5;
+	border: 2px solid #B5B5B5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+	color: #EDEFF1;
+}
+.social li:hover {
+	border: 2px solid #2c3e50;
+	background: #2c3e50;
+}
+.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+	color: #EDEFF1 !important;
+}
+.footer-bottom {
+	background: #E3E3E3;
+	border-top: 1px solid #DDDDDD;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.footer-bottom p.pull-left {
+	padding-top: 6px;
+}
+.payments {
+	font-size: 1.5em;	
+}
+</style>
+  
+<body data-spy="scroll" data-target="#my-navbar">
+	<!--navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> <!--navbar toggle button start-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>  <!--navbar toggle button ends-->
+				<b><a href="" class="navbar-brand">Quickart</a></b>
+
+			</div> <!--navbar header ends-->
+			<div class="collapse navbar-collapse" id="navbar-collapse"> <!--navbar collapse items-->
+				<a href="Register.html" class="btn navbar-btn btn-info navbar-right btn-sm" id="signupbutton">Sign Up</a>
+				<a href="Login.html" class="btn navbar-btn btn-info navbar-right btn-sm" id="loginbutton">Log In</a>
+			   	<ul class="nav navbar-nav">
+			   		<li><a href=#home>Home</a>
+			   		<li><a href=#gallary>Gallary</a>
+			   		<li><a href=#shopping>Shopping</a>
+			   		<li><a href=#contactus>Contact Us</a>
+			   		<li><a href=#aboutus>About Us</a>
+
+			   	</ul>
+			   	<a href="" class="btn navbar-btn navbar-left btn-info btn-md" id="cart">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Cart
+                </a>
+			</div> <!--navbar collapse items ends-->
+		</div> <!--end container-->
+	</nav><!--navbar end-->
+
+
+ 	<div class="jumbotron" id="home"> <!--Jumbotron starts from here-->
+ 		<div class="container text-center" id="home-container">
+			<div class="row">
+    			<div class="col-md-4">
+        			<img src="Quickart.jpg" alt="logo" />
+    			</div>
+    			<div class="col-md-8">
+       				<h1>Quickart</h1>
+ 					<p>Find and buy everything you need - Cloths, electronics and many more</p>
+ 				<div class="btn-group">
+ 					<a href="" class="btn btn-primary">Download App</a>
+ 					<a href="#shopping" class="btn btn-info">Visit Store</a>
+ 					<a href="" class="btn btn-primary">Spread the word</a>
+ 				</div>
+    		 	</div>
+			</div>
+		</div><!--container ends-->
+ 	</div>  <!--jumbotron ends -->
+
+<div class="container" id="gallary">
+<div id="myCarousel" class="carousel slide" data-ride="carousel"><!--Carousel starts from here-->
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="Men.jpg" alt="Men's Clothing">
+       <div class="carousel-caption">
+        <h3>Men's Wearing</h3>
+        <p>A well-tied tie is the first serious step in life.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Girl.jpg" alt="Girls Clothing">
+       <div class="carousel-caption">
+        <h3>Girls Wearing</h3>
+        <p>A woman's perfume tells more about her than her handwriting.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Car.jpg" alt="Electronics Things">
+       <div class="carousel-caption">
+        <h3>Technology </h3>
+        <p>The ultimate promise of technology is to make us master of a world that we command by the push of a button.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Furniture.jpg" alt="Furniture">
+       <div class="carousel-caption">
+        <h3>Furniture</h3>
+        <p>I'm fascinated by furniture design and interiors, and I want to try designing all that stuff.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+</div>             <!--Carousel ends here-->
+
+
+
+<hr>
+<div class="container" id="shopping">
+   <div class="section">
+   		<class="page-header" id="buyelectronics">
+   		<h2>Buy Electronic Stuffs</h2>
+   			
+   		</div>
+    	<div class="row text-center" >
+    	
+			<div class="col-lg-2 " >
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Laptops</h4>
+					<img src="Laptop.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Cameras</h4>
+					<img src="Camera.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Printers</h4>
+					<img src="Printer.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Mobiles</h4>
+					<img src="Mobile.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Lens</h4>
+					<img src="Lens.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Memory Cards</h4>
+					<img src="MemoryCard.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+
+  		</div>
+  	</div>
+</div>
+<hr>
+
+<div class="container">
+   <div class="section">
+   		<class="page-header" id="menswearing">
+   		<h2>Buy Men's Wearing</h2>
+   			
+   		</div>
+    	<div class="row text-center" >
+    	
+			<div class="col-lg-2 " >
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Laptops</h4>
+					<img src="Laptop.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Cameras</h4>
+					<img src="Camera.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Printers</h4>
+					<img src="Printer.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Mobiles</h4>
+					<img src="Mobile.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Lens</h4>
+					<img src="Lens.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Memory Cards</h4>
+					<img src="MemoryCard.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+
+  		</div>
+  	</div>
+</div>
+
+<hr>
+<div class="container">
+   <div class="section">
+   		<class="page-header" id="buygirlswearing">
+   		<h2>Buy Girl's Wearing</h2>
+   			
+   		</div>
+    	<div class="row text-center" >
+    	
+			<div class="col-lg-2 " >
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Laptops</h4>
+					<img src="Laptop.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Cameras</h4>
+					<img src="Camera.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Printers</h4>
+					<img src="Printer.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Mobiles</h4>
+					<img src="Mobile.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Lens</h4>
+					<img src="Lens.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Memory Cards</h4>
+					<img src="MemoryCard.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+
+  		</div>
+  	</div>
+</div>
+<hr>
+<div class="container">
+   <div class="section">
+   		<class="page-header" id="buyfurniture">
+   		<h2>Buy Furniture</h2>
+   			
+   		</div>
+    	<div class="row text-center" >
+    	
+			<div class="col-lg-2 " >
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Laptops</h4>
+					<img src="Laptop.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Cameras</h4>
+					<img src="Camera.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Printers</h4>
+					<img src="Printer.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Mobiles</h4>
+					<img src="Mobile.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Lens</h4>
+					<img src="Lens.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h4>Memory Cards</h4>
+					<img src="MemoryCard.jpeg" class="img-responsive" alt="image">
+				 	</div>
+
+				</div>
+			</div>
+
+  		</div>
+  	</div>
+</div> <!--Furniture idems ends here-->
+
+   			
+<div class="container" id="contactus">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Us Today!</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Last Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(+91)9967452030" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Address</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="address" placeholder="Address" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+ 
+<div class="form-group">
+  <label class="col-md-4 control-label">City and State</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="city , state" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Zip Code</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+
+
+<!-- Text area -->
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Message</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Type your message to Quickart"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+</div><!-- /.container -->
+<!--footer tag-->
+
+<footer id ="aboutus">
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Founder</h3>
+                    <ul>
+                        <li>  Rakesh Kumar </li>
+                        <li> Powai, Hiranandani  </li>
+                        <li>  Mumbai, India  </li>
+                        <li> 400076   </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Co-founder </h3>
+                    <ul>
+                        <li>  Rinku Kumar  </li>
+                        <li>  Ladwa, Dhod  </li>
+                        <li>  Sikar (Raj) </li>
+                        <li>  332002 </li>
+                    </ul>
+                </div>
+             
+                <div class="col-lg-4  col-md-2 col-sm-4 col-xs-6 " id="secondfooter">
+                    <h3> Subscribe Us ! </h3>
+                    <ul>
+                        <li>
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" placeholder="Email ">
+                                <button class="btn  bg-gray" type="button"> Subscribe<i class="fa fa-long-arrow-right"> </i> </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social" >
+                        <li> <a href="http://facebook.com"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="http://twitter.com"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="http://googleplus.com"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="http://pinterest.com"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="http://youtube.com"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom ">
+        <div class="container " >
+            <p class="pull-left"> Copyright © Quickart Pvt Limited. All right reserved. </p>
+            <div class="pull-right">
+                <ul class="nav nav-pills payments">
+                	<li><i class="fa fa-cc-visa"></i></li>
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+                    <li><i class="fa fa-cc-amex"></i></li>
+                    <li><i class="fa fa-cc-paypal"></i></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+   			
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	
+ 	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+</body>
+</html>
